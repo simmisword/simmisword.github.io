@@ -4,6 +4,7 @@
 //     name: 'Footer',
 // })
 </script>
+
 <template>
     <v-footer>Simon Schwertner - {{ new Date().getFullYear() }} </v-footer>
 </template>
