@@ -1,11 +1,10 @@
 <template>
   <v-app-bar scroll-behavior="hide">
     <v-app-bar-title>
-      Simon's Portfolio
+      Hi, I am Simon
     </v-app-bar-title>
     <v-btn icon>
       <v-icon icon="mdi-room-service-outline"></v-icon>
-
       <v-menu activator="parent">
         <v-list>
           <v-list-item href="mailto:sschwertner23@gmail.com">

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="img-hover-zoom">
         <v-img class="bg-grey-lighten-2" :aspect-ratio="1" cover @click="setOverlay" :src="url">
             <v-overlay contained v-model="overlay" class="align-center justify-center" scrim="#171717">
 
@@ -44,3 +44,15 @@ let setOverlay = () => {
     console.log(overlay.value)
 }
 </script>
+
+<style>
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+</style>
